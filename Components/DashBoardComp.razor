@@ -1,0 +1,135 @@
+﻿@using kanban.Models.Catagory;
+@using kanban.Models;
+<div class="card">
+    <div class="card-header">
+        <h3>Create Student Form</h3>
+    </div>
+    <div class="card-body">
+        <EditForm Model="dash" OnValidSubmit="handleValidSubmit">
+            <div class="form-row">
+                <div class="col">
+                    <label for="FirstName">First Name</label>
+                    <InputText class="form-control create-std  f_name " id="f_name" @bind-Value="dash.FName" />
+                </div>
+                <div class="col">
+                    <label for="MiddleName">Middle Name</label>
+                    <InputText class="form-control create-std  m_name" id="m_name" @bind-Value="dash.MName" />
+                </div>
+                <div class="col">
+                    <label for="LastName">Last Name</label>
+                    <InputText class="form-control create-std  l_name" id="l_name" @bind-Value="dash.LName" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="BirthDate">Birth Date</label>
+                    <InputDate class="form-control create-std  dob" id="dob" @bind-Value="dash.Dob" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="BloodGroup">Blood Group</label>
+                    <InputSelect class="form-control create-std  bl_group" id="bl_group" @bind-Value="dash.BlGroup">
+                        @{
+                            foreach (var value in Enum.GetValues(typeof(bloodgroup)))
+                            {
+                                <option value="@value">@value</option>
+                            }
+                        }
+                    </InputSelect>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Weight">Weight</label>
+                    <InputNumber class="form-control create-std wt" id="wt" @bind-Value="dash.Wt" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Height</label>
+                    <InputNumber class="form-control create-std  ht" id="ht" @bind-Value="dash.Ht" />
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Native Language</label>
+                    <InputText class="form-control create-std  moth_lang" id="moth_lang" @bind-Value="dash.MothLang" />
+                </div>
+                <div class="form-group col-md-6 ">
+                    <label for="inputEmail4">Gender</label>
+                    <InputSelect class="form-control create-std gender" id="gender" @bind-Value="dash.Gender">
+                        @{
+                            foreach (var value in Enum.GetValues(typeof(gender)))
+                            {
+                                <option value="@value">@value</option>
+                            }
+                        }
+                    </InputSelect>
+                </div>
+
+            </div>
+            <h2>Parent/Guardian</h2>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Father Name</label>
+                <InputText class="form-control create-std fat_name" id="fat_name" @bind-Value="dash.FName" />
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Father/Mother Occupation</label>
+                <InputText class="form-control create-std fat_occup" id="fat_occup" @bind-Value="dash.OccupFat" />
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Father/Mother Contact Number</label>
+                <InputText class="form-control create-std fat_cont" id="fat_cont" @bind-Value="dash.FatContact" />
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Father/Mother Email</label>
+                <InputText class="form-control create-std fat_email" id="fat_email" @bind-Value="dash.FatEmail" />
+            </div>
+            <h2>Residence</h2>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Province</label>
+                <InputText class="form-control create-std province" id="province" @bind-Value="dash.Province" />
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">City</label>
+                <InputText class="form-control create-std city" id="city" @bind-Value="dash.City" />
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Address(Current)</label>
+                <InputText class="form-control create-std cur_address" id="cur_address" @bind-Value="dash.CurrAdd" />
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Permanent Address</label>
+                <InputText class="form-control create-std per_address" id="per_address" @bind-Value="dash.PermAdd" />
+            </div>
+            <h2>Contact</h2>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Student Username</label>
+                <InputText class="form-control create-std std_username" id="std_username" @bind-Value="dash.StdUsername" />
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Student Email</label>
+                <InputText class="form-control create-std std_email" id="std_email" @bind-Value="dash.StdEmail" />
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Student Contact Number</label>
+                <InputText class="form-control create-std std_cont" id="std_cont" @bind-Value="dash.StdContact" />
+
+            </div>
+
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    public Root dash = new Root();
+
+    public async Task handleValidSubmit()
+    {
+        
+    }
+
+}

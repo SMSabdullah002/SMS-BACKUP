@@ -1,0 +1,38 @@
+﻿@using kanban.Models; 
+<div class="card">
+    <div class="card-header">
+        <h3>Login</h3>
+    </div>
+    <div class="card-body">
+        <EditForm Model="@login" OnValidSubmit="@handleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="form-group">
+                <label for="subjectInput">Username</label>
+                <InputText class="form-control" id="username" @bind-Value="login.Username" />
+            </div>
+
+            <div class="form-group">
+                <label for="subjectInput">Password</label>
+                <InputText class="form-control" id="password" @bind-Value="login.Password" />
+            </div>
+            <div>
+                <input type="submit" class="btn btn-primary" href="" value="Submit" />
+            </div>
+
+
+        </EditForm>
+
+    </div>
+</div>
+
+
+@code {
+    public Login login = new Login();
+
+    public async Task handleValidSubmit()
+    {
+
+    }
+
+}
