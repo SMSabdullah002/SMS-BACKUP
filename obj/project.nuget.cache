@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ApQ+sb1gkf+BT1oj4j6A3GHswh8WcYO2IG5EzZ8aC7tCpt3pkXim+DX5I39jhnMMdQi8f0H+PPKbz+Za7n1d0w==",
+  "dgSpecHash": "JWeYBYusZL2PDPtBTOT8mihYZzuEejgkpr10dHUSg5wxkNiOAAhD/olG/FhwrHuP+8qyatPdbfvYfij1CZMnaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Toshiba\\source\\repos\\kanban\\kanban.csproj",
+  "projectFilePath": "D:\\SMS FrontEnd\\kanban\\SMS-BACKUP\\kanban.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Toshiba\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.11\\microsoft.aspnetcore.authorization.5.0.11.nupkg.sha512",
     "C:\\Users\\Toshiba\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.11\\microsoft.aspnetcore.components.5.0.11.nupkg.sha512",

@@ -1150,11 +1150,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Toshiba\\source\\repos\\kanban\\kanban.csproj",
+      "projectUniqueName": "D:\\SMS FrontEnd\\kanban\\SMS-BACKUP\\kanban.csproj",
       "projectName": "kanban",
-      "projectPath": "C:\\Users\\Toshiba\\source\\repos\\kanban\\kanban.csproj",
+      "projectPath": "D:\\SMS FrontEnd\\kanban\\SMS-BACKUP\\kanban.csproj",
       "packagesPath": "C:\\Users\\Toshiba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Toshiba\\source\\repos\\kanban\\obj\\",
+      "outputPath": "D:\\SMS FrontEnd\\kanban\\SMS-BACKUP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
